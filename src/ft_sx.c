@@ -1,33 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strisdigit.c                                    :+:      :+:    :+:   */
+/*   ft_sx.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/16 21:37:21 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/17 14:27:30 by bledda           ###   ########.fr       */
+/*   Created: 2021/05/17 16:04:35 by bledda            #+#    #+#             */
+/*   Updated: 2021/05/17 16:13:36 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "../push_swap.h"
 
-int	ft_strisdigit(int ac, char **av)
+/*
+	sx: X is a or b
+	sa : swap a - Switch two first element.
+	sb : swap b - Switch two first element
+	If just elem or empty, sx is wero action
+*/
+
+int	sx(int *tab)
 {
 	int	i;
-	int	j;
+	int	tmp;
 
-	j = 1;
-	while (j < ac)
+	i = 0;
+	while (tab[i])
+		i++;
+	if (i > 1)
 	{
-		i = 0;
-		while (av[j][i])
-		{
-			if (!ft_isdigit(av[j][i]))
-				return (1);
-			i++;
-		}
-		j++;
+		tmp = tab[0];
+		tab[0] = tab[1];
+		tab[1] = tmp;
+		return (1);
 	}
 	return (0);
 }

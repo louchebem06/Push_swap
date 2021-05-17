@@ -1,0 +1,8 @@
+refaire tout ou presque
+function qui suprime le premier int d'un tab et une qui del le dernier
+PB RECUPERATION NEGATIV ET 0
+
+void ft_delFirstEntryTab(int *tab)
+void ft_delLastEntryTab(int *tab)
+
+Normalement OK

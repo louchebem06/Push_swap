@@ -1,33 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strisdigit.c                                    :+:      :+:    :+:   */
+/*   ft_delLastEntryTab.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/16 21:37:21 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/17 14:27:30 by bledda           ###   ########.fr       */
+/*   Created: 2021/05/17 15:54:12 by bledda            #+#    #+#             */
+/*   Updated: 2021/05/17 16:02:07 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-int	ft_strisdigit(int ac, char **av)
+void	ft_delLastEntryTab(int *tab)
 {
 	int	i;
-	int	j;
 
-	j = 1;
-	while (j < ac)
-	{
-		i = 0;
-		while (av[j][i])
-		{
-			if (!ft_isdigit(av[j][i]))
-				return (1);
-			i++;
-		}
-		j++;
-	}
-	return (0);
+	i = 0;
+	while (tab[i])
+		i++;
+	i--;
+	tab[i] = tab[i + 1];
 }
