@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sx.c                                            :+:      :+:    :+:   */
+/*   ft_rrx.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/17 16:04:35 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/18 14:33:47 by bledda           ###   ########.fr       */
+/*   Created: 2021/05/18 15:51:57 by bledda            #+#    #+#             */
+/*   Updated: 2021/05/18 15:57:46 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "../push_swap.h"
 
 /*
-	sx: X is a or b
-	sa : swap a - Switch two first element.
-	sb : swap b - Switch two first element
-	If just elem or empty, sx is zero action
+	rrx: X is a or b
+	rra : move last elem a is first a.
+	rrb : move last elem b is first b.
+	If just elem or empty, rrx is zero action
 */
 
-int	sx(int *tab)
+int	rrx(int *tab)
 {
 	int	i;
 	int	tmp;
@@ -26,12 +27,13 @@ int	sx(int *tab)
 	i = 0;
 	while (tab[i])
 		i++;
-	if (i > 1)
+	i--;
+	while (i > 0)
 	{
-		tmp = tab[0];
-		tab[0] = tab[1];
-		tab[1] = tmp;
-		return (1);
+		tmp = tab[i - 1];
+		tab[i - 1] = tab[i];
+		tab[i] = tmp;
+		i--;
 	}
-	return (0);
+	return (1);
 }

@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 20:23:55 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/17 14:15:44 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/18 15:55:33 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ int	*ft_check(int ac, char **av)
 	}
 	while (var.j < ac)
 	{
-		if (atoi(av[var.j]) <= INT_MAX && atoi(av[var.j]) >= INT_MIN)
-			var.tab[var.i] = atoi(av[var.j]);
+		if (ft_atoi(av[var.j]) <= INT_MAX && ft_atoi(av[var.j]) >= INT_MIN)
+			var.tab[var.i] = ft_atoi(av[var.j]);
 		else
 		{
 			free(var.tab);

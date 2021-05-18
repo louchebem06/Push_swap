@@ -1,37 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sx.c                                            :+:      :+:    :+:   */
+/*   ft_px.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/17 16:04:35 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/18 14:33:47 by bledda           ###   ########.fr       */
+/*   Created: 2021/05/18 14:48:16 by bledda            #+#    #+#             */
+/*   Updated: 2021/05/18 15:58:23 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "../push_swap.h"
 
 /*
-	sx: X is a or b
-	sa : swap a - Switch two first element.
-	sb : swap b - Switch two first element
+	px: X is a or b
+	pb : push b - move first elem a to end b.
+	pa : push a - move first elem b to end a.
 	If just elem or empty, sx is zero action
+	return (new tab);
 */
 
-int	sx(int *tab)
+int	*px(int *tab, int *tab2)
 {
 	int	i;
-	int	tmp;
+	int	firstElem;
+	int	*tmp;
 
 	i = 0;
-	while (tab[i])
-		i++;
-	if (i > 1)
+	firstElem = tab[0];
+	ft_delFirstEntryTab(tab);
+	tmp = malloc(sizeof(tab2) + sizeof(int));
+	while (tab2[i])
 	{
-		tmp = tab[0];
-		tab[0] = tab[1];
-		tab[1] = tmp;
-		return (1);
+		tmp[i] = tab2[i];
+		i++;
 	}
-	return (0);
+	tmp[i] = firstElem;
+	return (tmp);
 }

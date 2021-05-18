@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 21:37:21 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/17 14:27:30 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/18 15:57:12 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_strisdigit(int ac, char **av)
 		i = 0;
 		while (av[j][i])
 		{
-			if (!ft_isdigit(av[j][i]))
+			if (!ft_isdigit(av[j][i]) && !ft_isdigit(av[j][i + 1]))
 				return (1);
 			i++;
 		}
