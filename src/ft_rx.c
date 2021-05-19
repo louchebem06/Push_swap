@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 15:10:11 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/19 16:48:57 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/19 17:07:26 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 int	rx(int *tab, int *size_tab)
 {
 	int	i;
-	int tmp;
+	int	tmp;
 
 	i = *size_tab - 1;
 	while (i)
