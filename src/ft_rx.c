@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 15:10:11 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/18 15:57:36 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/19 16:48:57 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,22 @@
 
 /*
 	rx: X is a or b
-	ra : rotate a - first elem a to last elem.
-	rb : rotate b - first elem a to last elem.
+	ra : rotate a - last elem a to first elem.
+	rb : rotate b - last elem a to first elem.
 */
 
-int	rx(int *tab)
+int	rx(int *tab, int *size_tab)
 {
 	int	i;
-	int	tmp;
+	int tmp;
 
-	i = 0;
-	while (tab[i])
+	i = *size_tab - 1;
+	while (i)
 	{
-		if (tab[i + 1])
-		{
-			tmp = tab[i];
-			tab[i] = tab[i + 1];
-			tab[i + 1] = tmp;
-		}
-		i++;
+		tmp = tab[i];
+		tab[i] = tab[i - 1];
+		tab[i - 1] = tmp;
+		i--;
 	}
 	return (1);
 }
