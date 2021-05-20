@@ -1,36 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_DEC.c                                           :+:      :+:    :+:   */
+/*   ft_action2.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/17 16:05:16 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/20 17:24:35 by bledda           ###   ########.fr       */
+/*   Created: 2021/05/20 19:11:41 by bledda            #+#    #+#             */
+/*   Updated: 2021/05/20 19:11:55 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-int	ft_DEC(int *tab, int *size_tab)
+void	ft_action_rrb(int *tabB, int *size_b)
 {
-	int	i;
-	int	tmp;
-
-	i = *size_tab - 1;
-	if (i >= 0)
-	{
-		i = 1;
-		tmp = tab[0];
-		while (i < *size_tab - 1)
-		{
-			if (tmp < tab[i])
-				return (0);
-			tmp = tab[i];
-			i++;
-		}
-		return (1);
-	}
-	else
-		return (0);
+	ft_putstr_fd("rrb\n", 1);
+	rrx(tabB, size_b);
 }

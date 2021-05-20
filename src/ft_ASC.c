@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 16:05:07 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/19 17:01:13 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/20 17:24:45 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_ASC(int *tab, int *size_tab)
 	{
 		i = 1;
 		tmp = tab[0];
-		while (tab[i])
+		while (i < *size_tab - 1)
 		{
 			if (tmp > tab[i])
 				return (0);

@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/22 13:43:00 by bledda            #+#    #+#             */
-/*   Updated: 2021/03/30 09:50:00 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/20 14:36:28 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static	int	neg_symbole(int i)
 	return (0);
 }
 
-int	ft_atoi(const char *str)
+long long int	ft_atoi(const char *str)
 {
 	unsigned long int	atoi;
 	int					i;
@@ -43,7 +43,7 @@ int	ft_atoi(const char *str)
 		if (atoi >= 922337203685477587)
 			return (neg_symbole(symbole));
 	}
-	return ((int)(atoi * symbole));
+	return (atoi * symbole);
 }
 
 /* https://en.wikibooks.org/wiki/C_Programming/limits.h */
