@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 23:48:57 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/21 08:36:25 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/21 08:38:33 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ void	move(int *tabA, int *size_a, int *tabB, int *size_b)
 		ft_action_sb(tabB, size_b);
 	else if (!ft_ASC(tabA, size_a))
 		ft_action_pb(tabA, size_a, tabB, size_b);
-	else if (ft_ASC(tabA, size_a)/* && ft_DEC(tabB, size_b)*/)
+	else if (ft_ASC(tabA, size_a))
 		ft_action_pa(tabA, size_a, tabB, size_b);
 
 	else

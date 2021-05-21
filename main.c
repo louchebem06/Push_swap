@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 20:23:55 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/21 08:02:37 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/21 08:39:26 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,12 @@ int	main(int ac, char **av)
 	int	*tab;
 
 	if (ac > 2)
+	{
 		if (ft_check(ac, av))
 		{
 			tab = ft_check(ac, av);
 			ft_push_swap(tab, ac);
 		}
+	}
 	return (0);
 }
