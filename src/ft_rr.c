@@ -6,15 +6,11 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 15:10:17 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/19 16:49:49 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/21 08:04:43 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
-
-/*
-	rr : exec ra and rb is again time.
-*/
 
 int	rr(int *tab, int *size_tab, int *tab2, int *size_tab2)
 {

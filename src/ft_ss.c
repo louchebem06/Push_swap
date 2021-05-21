@@ -6,15 +6,11 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 16:04:56 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/19 16:16:23 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/21 08:04:58 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
-
-/*
-	ss : Exect sa and sb is idem time.
-*/
 
 int	ss(int *tab, int *size_tab, int *tab2, int *size_tab2)
 {

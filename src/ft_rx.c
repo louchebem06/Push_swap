@@ -6,17 +6,11 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 15:10:11 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/19 17:07:26 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/21 08:04:22 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
-
-/*
-	rx: X is a or b
-	ra : rotate a - last elem a to first elem.
-	rb : rotate b - last elem a to first elem.
-*/
 
 int	rx(int *tab, int *size_tab)
 {

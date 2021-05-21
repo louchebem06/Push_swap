@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 19:11:41 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/20 19:11:55 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/21 08:15:52 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_action_rrb(int *tabB, int *size_b)
 {
-	ft_putstr_fd("rrb\n", 1);
+	ft_putstr_fd("rb\n", 1);
 	rrx(tabB, size_b);
 }
