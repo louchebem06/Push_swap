@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 23:48:57 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/21 14:42:03 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/21 15:33:29 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,16 +93,22 @@ void	ft_push_swap(int *tabA, int ac)
 	int	size_a;
 	int	size_b;
 	int	*tabB;
+	int count;
 
 	size_a = ac - 1;
 	size_b = 0;
 	tabB = malloc(sizeof(int) * ac);
+	count = 1;
 	while (1)
 	{
 		if (ft_ASC(tabA, &size_a) && size_b == 0)
 			break ;
 		move(tabA, &size_a, tabB, &size_b);
+		count++;
 	}
+	ft_putstr_fd("NB MOVE : ", 2);
+	ft_putnbr_fd(count, 2);
+	ft_putchar_fd('\n', 2);
 	free(tabA);
 	free(tabB);
 }
