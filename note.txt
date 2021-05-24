@@ -1,0 +1,35 @@
+ATTENTION LES ROTATE SONT INVERSER RRA = RA && RA = RRA
+
+//SWITCH
+ft_action_ss(int *tabA, int *size_a, int *tabB, int *size_b)
+ft_action_sa(int *tabA, int *size_a)
+ft_action_sb(int *tabB, int *size_b)
+
+//PUSH
+ft_action_pa(int *tabA, int *size_a, int *tabB, int *size_b)
+ft_action_pb(int *tabA, int *size_a, int *tabB, int *size_b)
+
+//ROTATE
+ft_action_rr(int *tabA, int *size_a, int *tabB, int *size_b)
+ft_action_rrr(int *tabA, int *size_a, int *tabB, int *size_b)
+ft_action_ra(int *tabA, int *size_a)
+ft_action_rra(int *tabA, int *size_a)
+ft_action_rb(int *tabB, int *size_b)
+ft_action_rrb(int *tabB, int *size_b)
+
+//SWITCH
+ss ss(tabA, size_a, tabB, size_b)
+sa sx(tabA, size_a)
+sb sx(tabB, size_b)
+
+//PUSH
+pa px(tabB, size_b, tabA, size_a)
+pb px(tabA, size_a, tabB, size_b)
+
+//ROTATE
+rr rr(tabA, size_a, tabB, size_b)
+rrr rrr(tabA, size_a, tabB, size_b)
+ra rx(tabA, size_a)
+rb rx(tabB, size_b)
+rra rrx(tabA, size_a)
+rrb rrx(tabB, size_b)
