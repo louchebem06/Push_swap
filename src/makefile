@@ -15,7 +15,9 @@ SRCS	= ft_action0.c \
 			ft_strisdigit.c \
 			ft_sx.c \
 			ft_test_rr.c \
-			ft_test_rrr.c
+			ft_test_rrr.c \
+			ft_istolong.c \
+			algocustom.c
 OBJS	= ${SRCS:.c=.o}
 CC		= gcc
 CFLAGS  = -Wall -Wextra -Werror

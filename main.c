@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 20:23:55 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/21 08:39:26 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/24 14:37:49 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ int	*ft_check(int ac, char **av)
 	var.i = 0;
 	var.j = 1;
 	var.tab = malloc(sizeof(int) * (ac));
-	if (ac <= 2 || ft_strisdigit(ac, av) || ft_isduplicate(ac, av))
+	if (ac <= 2 || ft_strisdigit(ac, av) || ft_isduplicate(ac, av)
+		|| ft_istolong(ac, av))
 	{
 		ft_putstr_fd("Error\n", 2);
 		return (0);

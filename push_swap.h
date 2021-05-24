@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 20:25:53 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/21 08:10:15 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/24 16:47:02 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,7 @@ int		ft_test_rrxa2(int *tabA, int *size_a);
 int		ft_test_rrxb2(int *tabB, int *size_b);
 int		ft_test_rxa2(int *tabA, int *size_a);
 int		ft_test_rxb2(int *tabB, int *size_b);
+int		ft_istolong(int ac, char **av);
+void	algocustom(int *tabA, int *size_a, int *tabB, int *size_b);
 
 #endif
