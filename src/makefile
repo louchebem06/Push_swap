@@ -17,6 +17,11 @@ SRCS	= ft_action0.c \
 			ft_test_rr.c \
 			ft_test_rrr.c \
 			ft_istolong.c \
+			ft_minimax.c \
+			algo3.c \
+			algo5.c \
+			algo100.c \
+			algo500.c \
 			algocustom.c
 OBJS	= ${SRCS:.c=.o}
 CC		= gcc
