@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 20:25:53 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/25 02:41:10 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/25 17:18:18 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,13 +68,11 @@ int		ft_test_rxb2(int *tabB, int *size_b);
 int		ft_istolong(int ac, char **av);
 int		ft_min(int *tab, int *size);
 int		ft_max(int *tab, int *size);
-void	algo3(int *tabA, int *size_a);
-void	algo5(int *tabA, int *size_a, int *tabB, int *size_b);
 void	algo100(int *tabA, int *size_a, int *tabB, int *size_b);
 void	algo500(int *tabA, int *size_a, int *tabB, int *size_b);
 void	algocustom(int *tabA, int *size_a, int *tabB, int *size_b);
 void	min_max_up(int *tab, int *size, int search);
-int ft_hold_first(int *tabA, int *size_a, int value);
-int ft_hold_second(int *tabA, int *size_a, int value);
+int		ft_hold_first(int *tabA, int *size_a, int value);
+int		ft_hold_second(int *tabA, int *size_a, int value);
 
 #endif
