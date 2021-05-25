@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 20:25:53 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/25 17:18:18 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/25 21:24:51 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,25 @@ typedef struct s_check
 	long long	j;
 	int			*tab;
 }	t_check;
+
+typedef struct s_algo
+{
+	int	max;
+	int	min_b;
+	int	max_b;
+	int	hf;
+	int	hs;
+	int	b;
+	int	i;
+}	t_algo;
+
+typedef struct s_min_max
+{
+	int	i;
+	int	j;
+	int	z;
+	int	x;
+}	t_min_max;
 
 int		ft_strisdigit(int ac, char **av);
 int		ft_isduplicate(int ac, char **av);
@@ -74,5 +93,7 @@ void	algocustom(int *tabA, int *size_a, int *tabB, int *size_b);
 void	min_max_up(int *tab, int *size, int search);
 int		ft_hold_first(int *tabA, int *size_a, int value);
 int		ft_hold_second(int *tabA, int *size_a, int value);
+void	hold_select(t_algo var, int *tabA, int *size_a);
+void	hold_value(t_algo *var, int *size_a, int *tabA);
 
 #endif

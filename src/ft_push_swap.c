@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 23:48:57 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/25 02:49:12 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/25 18:56:40 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_push_swap(int *tabA, int ac)
 	int	size_a;
 	int	size_b;
 	int	*tabB;
-	int start_size;
+	int	start_size;
 
 	size_a = ac - 1;
 	start_size = size_a;
