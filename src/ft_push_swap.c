@@ -6,7 +6,7 @@
 /*   By: bledda <bledda@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/16 23:48:57 by bledda            #+#    #+#             */
-/*   Updated: 2021/05/25 18:56:40 by bledda           ###   ########.fr       */
+/*   Updated: 2021/05/26 17:35:01 by bledda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ void	ft_push_swap(int *tabA, int ac)
 			algocustom(tabA, &size_a, tabB, &size_b);
 		}
 	}
-	else if (start_size <= 100)
+	else if (start_size <= 100 && !ft_ASC(tabA, &size_a))
 		algo100(tabA, &size_a, tabB, &size_b);
-	else if (start_size <= 500)
+	else if (start_size <= 500 && !ft_ASC(tabA, &size_a))
 		algo500(tabA, &size_a, tabB, &size_b);
 	free(tabA);
 	free(tabB);
